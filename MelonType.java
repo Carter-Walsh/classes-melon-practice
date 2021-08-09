@@ -4,12 +4,12 @@ public class MelonType {
 		System.out.println("melon type defined");
 	}
 
-    String code;
-    int firstHarvest;
-    String color;
-    boolean isSeedless;
-    boolean isBestseller;
-    String name;
+    final String code;
+    final int firstHarvest;
+    final String color;
+    final boolean isSeedless;
+    final boolean isBestseller;
+    final String name;
 
 	public MelonType (String code, String name, int firstHarvest, String color, boolean isSeedless, boolean isBestseller) {
 		this.code = code;

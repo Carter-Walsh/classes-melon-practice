@@ -4,11 +4,11 @@ public class Melon {
 		System.out.println("melon defined");
 	}
 
-    MelonType melonType;
-    int shapeRating;
-    int colorRating;
-    int field;
-    String harvester;
+    final MelonType melonType;
+    final int shapeRating;
+    final int colorRating;
+    final int field;
+    final String harvester;
 
 	public Melon (MelonType melonType, int shapeRating, int colorRating, int field, String harvester) {
 		this.melonType = melonType;
@@ -19,11 +19,7 @@ public class Melon {
 	}
 
 	public boolean isSellable() {
-		if (this.colorRating > 5 && this.shapeRating > 5 && this.field != 3) {
-			return true;
-		} else {
-			return false;
-		}
+		return this.colorRating > 5 && this.shapeRating > 5 && this.field != 3;
 	}
 
 }
